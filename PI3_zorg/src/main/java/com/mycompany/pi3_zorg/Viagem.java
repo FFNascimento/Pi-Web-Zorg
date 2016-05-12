@@ -1,5 +1,6 @@
 package com.mycompany.pi3_zorg;
 
+
 import static com.sun.org.apache.xalan.internal.lib.ExsltDatetime.dateTime;
 import java.util.GregorianCalendar;
 
@@ -13,6 +14,10 @@ public class Viagem {
     private GregorianCalendar inicioViagem;
     private GregorianCalendar fimViagem;
     
+    public Viagem(){
+        
+    }
+    
     public Viagem(int codViagem, String status, GregorianCalendar inicioViagem, GregorianCalendar fimViagem) {
         this.codViagem = codViagem;
         this.status = status;
@@ -20,25 +25,55 @@ public class Viagem {
         this.fimViagem = fimViagem;
     }
     
-    public void agendarViagem(Endereco enderecoPartida, Endereco enderecoDestino, String nomeCliente) {
-        this.enderecoPartida = enderecoPartida;
-        this.enderecoDestino = enderecoDestino;
-        this.nomeCliente = nomeCliente;
-    }
-    
-    public void cancelarViagem(int codTaxista, int codViagem) {
-        
+    public Endereco getEnderecoPartida() {
+        return enderecoPartida;
     }
 
-    public void finalizarViagem(int codTaxista, int codViagem) {
-        
+    public void setEnderecoPartida(Endereco enderecoPartida) {
+        this.enderecoPartida = enderecoPartida;
     }
-    
-    public Endereco getEndereco(){
-        
+
+    public Endereco getEnderecoDestino() {
+        return enderecoDestino;
     }
-    
-    public void setEndereco(String cep, String logadouro, int numero){
-        
+
+    public void setEnderecoDestino(Endereco enderecoDestino) {
+        this.enderecoDestino = enderecoDestino;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public GregorianCalendar getInicioViagem() {
+        return inicioViagem;
+    }
+
+    public void setInicioViagem(GregorianCalendar inicioViagem) {
+        this.inicioViagem = inicioViagem;
+    }
+
+    public GregorianCalendar getFimViagem() {
+        return fimViagem;
+    }
+
+    public void setFimViagem(GregorianCalendar fimViagem) {
+        this.fimViagem = fimViagem;
+    }
+
+    public int getCodViagem() {
+        return codViagem;
     }
 }

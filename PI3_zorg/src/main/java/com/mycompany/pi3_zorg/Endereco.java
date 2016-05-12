@@ -11,6 +11,10 @@ public class Endereco {
         this.logadouro = logadouro;
         this.numero = numero;
     }
+    
+    public Endereco(){
+        
+    }
 
     public String getCep() {
         return cep;

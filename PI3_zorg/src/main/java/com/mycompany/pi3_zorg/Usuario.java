@@ -15,7 +15,6 @@ public class Usuario {
     private String senha;
     private String acesso;
     private int codUsuario;
-    private Funcionario funcionario;
     
     public Usuario(){
         
@@ -31,7 +30,7 @@ public class Usuario {
         return this.acesso;
     }
     
-    public void deslogar (){
+    public boolean deslogar (){
         return false;
     }
     

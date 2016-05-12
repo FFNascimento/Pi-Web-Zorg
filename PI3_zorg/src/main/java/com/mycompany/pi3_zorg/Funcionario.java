@@ -18,6 +18,10 @@ public class Funcionario {
     private String telefone;
     private String matricula;
     private Usuario usuario;
+    
+    public Funcionario(){
+        
+    }
 
     public Funcionario(String nome, String sobrenome, String telefone, String matricula) {
         this.nome = nome;
@@ -25,6 +29,7 @@ public class Funcionario {
         this.telefone = telefone;
         this.matricula = matricula;
     }
+
 
     public String getNome() {
         return nome;
