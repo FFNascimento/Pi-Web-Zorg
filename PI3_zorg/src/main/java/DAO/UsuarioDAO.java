@@ -19,7 +19,7 @@ public class UsuarioDAO {
     }
     
     public List<Usuario> listarUsuarios() {
-        String sql = "SELECT * FROM usuario";
+        String sql = "SELECT * FROM USUARIO";
         List<Usuario> usuario = new ArrayList<>();
         try {
             PreparedStatement ps = con.prepareStatement(sql);
