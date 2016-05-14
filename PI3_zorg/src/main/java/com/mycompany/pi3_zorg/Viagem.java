@@ -14,6 +14,7 @@ public class Viagem {
     private GregorianCalendar inicioViagem;
     private GregorianCalendar fimViagem;
     
+    
     public Viagem(){
         
     }
@@ -75,5 +76,21 @@ public class Viagem {
 
     public int getCodViagem() {
         return codViagem;
+    }
+    
+    public void getRelatorioReceitaPorPonto(){
+        
+    }
+    
+    public void getRelatorioReceitaTodosPontos(){
+        
+    }
+    
+    public void getRelatorioReceitaTaxistaPonto(){
+        
+    }
+    
+    public void getRelatorioReceitaTodosTaxistas(){
+        
     }
 }
